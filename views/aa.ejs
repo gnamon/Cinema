@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html> -->
+
+<%- include('partials/header'); -%>
+
+<html lang="en">
+<style>
+    @import '/style.css';
+</style>
+   
+
+
+<body>
+  <div class="receipt">
+    <div class="receipt-inner">
+      <h2>CONFIRMATION</h2>
+          <hr>
+          <div class="title">Name : <span><%=member.fName%> <%=member.LName%> </span></div>
+          <div class="title">theater : <span><%=theater%></span></div>
+          <div class="title">movie : <span><%=movie%></></span>
+          <div class="title">1 time(buy) : <span><%=Date%> <%=time%></></span></div>
+          <div class="title">show time : <span><%=Date%> <%=showTime%></span></div>
+  
+          <div class="title">seats : <span><%=numberOfSeats%></span></div>
+          <div class="title">position : <span><%=seat_position%></span></div>
+          <div class="title">price : <span><%=price%></span></div>
+
+          <div style="text-align:center; padding-top: 45px; font-size: 14px;" >-- Thank you very much --</div>
+          <div class="common_btn">
+            <a class="btn" href="/"><i class="fa fa-chevron-left"></i><span >Back to Home page</span></a>
+          </div>
+    </div>
+  </div>
+ 
+        
+
+   
+</body>
+</html>

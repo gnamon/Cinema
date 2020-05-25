@@ -1,0 +1,21 @@
+  
+<%- include('partials/header'); -%>
+
+<div class="container-fluid">
+    <div class="cinema">
+        <div class="area">Our Branches</div>
+        <div class="row branch">
+            <% for (var i = 0; i < branchData.length; i++) { %>
+            <div class="column">
+                <img class="logo" src="<%=branchData[i].Logo %>">
+                <div class="b-info">
+                    <div class="name"><%=branchData[i].branchName %></div>
+                    <div class="Tel">Tel. <%=branchData[i].phoneNo %></div>
+                </div>
+            </div>  
+            <% } %>          
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>
